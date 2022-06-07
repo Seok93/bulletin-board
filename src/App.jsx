@@ -1,4 +1,5 @@
 import { Route, Routes } from 'react-router-dom';
+import style from './App.module.css';
 
 import Header from './components/Header';
 import Login from './components/user/Login';
@@ -8,9 +9,9 @@ import AddBulletinBoard from './components/bulletin-board/AddBulletinBoard';
 
 function App() {
   return (
-    <div className="wrapper">
+    <div className={style['wrapper']}>
       <Header />
-      <main>
+      <main className={style['content']}>
         <Routes>
           <Route path="/" element={<BulletinBoard />}></Route>
           <Route path="/login" element={<Login />}></Route>
