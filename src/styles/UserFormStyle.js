@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const RegisterWrapper = styled.section`
+export const UserFormWrapper = styled.section`
   width: 300px;
   margin: 0 auto;
   form {

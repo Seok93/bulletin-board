@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 
-import { RegisterWrapper } from '../../styles/RegisterStyle';
+import { UserFormWrapper } from '../../styles/UserFormStyle';
 
 export default function Register() {
   const navigate = useNavigate();
@@ -113,7 +113,7 @@ export default function Register() {
   };
 
   return (
-    <RegisterWrapper>
+    <UserFormWrapper>
       <form onSubmit={requestRegister}>
         <h1>회원가입</h1>
         <label htmlFor="id">ID:</label>
@@ -151,6 +151,6 @@ export default function Register() {
         </button>
         {registerMsg && <span className="warning">{registerMsg}</span>}
       </form>
-    </RegisterWrapper>
+    </UserFormWrapper>
   );
 }
